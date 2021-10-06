@@ -1,0 +1,202 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="hero">
+    <div class="hero--content">
+        <div class="hero--content--intro">
+            <img id="profile_pic" src="{% static 'images/dangha.jpg' %}" alt="profile_pic">
+            <h1 class="intro--name">Dang <br> Ha</h1>
+        </div>
+
+        <div class="hero--content--subheadline">
+
+            <h3 class="description">Django Developer</h3>
+        </div>
+    </div>
+
+</section>
+
+<section class="container section--2">
+
+    <h4>MY PROJECTS</h4>
+    <div class="projects--wrapper">
+
+        {% for project in projects %}
+        <div class="project--column">
+            <a href="{% url 'base:project' project.id %}">
+                <img class="project--thumbnail" src="{{project.thumbnail.url}}" alt="thumb_nail">
+            </a>
+            <div class="project--body">
+                <h5>{{project.title}}</h5>
+            </div>
+        </div>
+        {% empty %}
+
+        <h3>There are no projects in the database...</h3> {% endfor %} </div>
+
+
+        <div class="about--wrapper">
+            <h3>More About Me</h3>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book.</p>
+            <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including
+                versions of Lorem Ipsum.</p>
+        </div>
+
+</section>
+
+<section class="section--1">
+    <div class="container">
+        <h4>MY SKILLS</h4>
+    </div>
+    <div class="skills--container">
+        {% for skill in detailedSkills %}
+        <div class="skill--wrapper">
+            {% if skill.logo %}
+            <img class="skill--logo" src="{{skill.logo.url}}" alt="logo">
+            {% endif %}
+            <div>
+                <h5>{{skill.title}}</h5>
+                <p>{{skill.body}}</p>
+            </div>
+
+        </div>
+        {% endfor %}
+
+
+        <h4>Other Skills</h4>
+        <div class="other--skills--wrapper">
+            {% for skill in skills %}
+            <div class="skill--tag">
+                <span>{{skill.title}}</span>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="container section--2">
+    <h4>ENDORSEMENTS</h4>
+    <div class="skills--container">
+
+
+        {% for i in endorsements %}
+        <div style="margin-bottom: 2em;" class="card">
+            <div class="card-body">
+                <h5>{{ i.name }}</h5>
+                <p>{{ i.body }}</p>                
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center">
+            <a class="btn btn-primary" href="{% url 'base:add-endorsement' %}">Add Endorsement</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section--1">
+    <div class="container">
+        <h4>MY LOCATION</h4>
+        <div class="container container-iframe text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2394748027764!2d106.73058930947059!3d10.72759528090378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752565caeb825f%3A0x8e71399d04c059c3!2zODU4IEh14buzbmggVOG6pW4gUGjDoXQsIFTDom4gUGjDuiwgUXXhuq1uIDcsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1630856971885!5m2!1sen!2s" class="map_sss responsive-iframe" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+
+<section class="container section--2">
+    <h4>MESSAGE ME</h4>
+    <form class="contact--form" method="POST">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">{{ form.name.label }}</label>
+            {{ form.name }}
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">{{ form.email.label }}</label>
+            {{ form.email }}
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">{{ form.subject.label }}</label>
+            {{ form.subject }}
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">{{ form.body.label }}</label>
+            {{ form.body }}
+        </div>
+
+        <div class="text-center">
+            <input class="btn btn-primary" type="submit" value="submit">
+        </div>
+    </form>
+
+</section>
+
+
+<section class="container section--1">
+    <h4>CONTACT ME</h4>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-4 py-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div> <span><i class="fa fa-phone fa-2x"></i></span> </div>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <span class="d-block">Call Me</span>
+                            <span class="d-block "> (+84) 349 998 172 </span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div> <span><i class="fa fa-envelope fa-2x"></i></span> </div>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <span class="d-block">My Email</span>
+                            <span class="d-block">hadh31011999@gmail.com</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div> <span><i class="fa fa-map-marker fa-2x"></i></span> </div>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <span class="d-block">Address</span>
+                            <span class="d-block"> 860/16 Huynh Tan Phat, District 7</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+{% endblock %}
