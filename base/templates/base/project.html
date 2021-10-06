@@ -15,7 +15,7 @@
 
 <div class="container">
     <div class="project-container">
-        <img class="project-image" src="{{ project.thumbnail.url }}">
+        <img class="project-image img-fluid" src="{{ project.thumbnail.url }}">
         <h1>{{ project.title }}</h1>
         <a class="btn btn-warning" href="{% url 'base:edit-project' project.id %}">Edit</a>
         <hr>
