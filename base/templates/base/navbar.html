@@ -1,20 +1,37 @@
+{% load custom_tags %}
+
 <section class="navigation-bar">
-    
     <a class="nav-link" href="{% url 'base:home' %}">
-        Projects
+        Home
     </a>
-
-
     {%  if request.user.is_authenticated %}
-    <a class="nav-link" href="{% url 'base:inbox' %}">
-        Inbox
-    </a>
-    <a class="nav-link" href="{% url 'base:add-project' %}">
-        Add Project
-    </a>
-    <a class="nav-link" href="{% url 'base:add-skill' %}">
-        Add Skill
-    </a>
+        <a class="nav-link" href="{% url 'base:inbox' %}">
+            Inbox
+        </a>
+        <a class="nav-link" href="{% url 'base:add-project' %}">
+            Add Project
+        </a>
+        <a class="nav-link" href="{% url 'base:add-skill' %}">
+            Add Skill
+        </a>
+    {% else %}
+        <a class="nav-link" href="{% anchor 'base:home' 'my-projects' %}">
+            My projects
+        </a>
+        <a class="nav-link" href="{% anchor 'base:home' 'my-skills' %}">
+            My skills
+        </a>
+
+        <a class="nav-link" href="{% anchor 'base:home' 'my-location' %}">
+            My location
+        </a>
+        <a class="nav-link" href="{% anchor 'base:home' 'your-message-to-me' %}">
+            Message me
+        </a>
+        <a class="nav-link" href="{% anchor 'base:home' 'contact-me' %}">
+            Contact me
+        </a>
+
     {% endif %}
 
 </section>

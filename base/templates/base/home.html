@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<section class="hero">
+<section class="hero" id="my-hero">
     <div class="hero--content">
         <div class="hero--content--intro">
             <img id="profile_pic" src="{% static 'images/dangha.jpg' %}" alt="profile_pic">
@@ -18,7 +18,7 @@
 
 </section>
 
-<section class="container section--2">
+<section class="container section--2" id="my-projects">
 
     <h4>MY PROJECTS</h4>
     <div class="projects--wrapper">
@@ -54,7 +54,7 @@
 
 </section>
 
-<section class="section--1">
+<section class="section--1" id="my-skills">
     <div class="container">
         <h4>MY SKILLS</h4>
     </div>
@@ -87,7 +87,7 @@
 </section>
 
 
-<section class="container section--2">
+<section class="container section--2" id="your-endorsements">
     <h4>ENDORSEMENTS</h4>
     <div class="skills--container">
 
@@ -107,7 +107,7 @@
 </section>
 
 
-<section class="section--1">
+<section class="section--1" id="my-location">
     <div class="container">
         <h4>MY LOCATION</h4>
         <div class="container container-iframe text-center">
@@ -117,7 +117,7 @@
 </section>
 
 
-<section class="container section--2">
+<section class="container section--2" id="your-message-to-me">
     <h4>MESSAGE ME</h4>
     <form class="contact--form" method="POST">
         {% csrf_token %}
@@ -150,7 +150,7 @@
 </section>
 
 
-<section class="container section--1">
+<section class="container section--1" id="contact-me">
     <h4>CONTACT ME</h4>
     <div class="container-fluid">
         <div class="container">
