@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d45d2749-32e0-4e07-ae8a-9545995fc3d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/base/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +16,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/templates/base/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="46">
               <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/templates/base/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="346">
+              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -52,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/templates/base/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2060">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="2292">
+              <caret line="119" column="42" lean-forward="true" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -76,10 +72,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/templates/base/home.html" />
         <option value="$PROJECT_DIR$/base/templatetags/__init__.py" />
         <option value="$PROJECT_DIR$/base/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/base/templates/base/navbar.html" />
+        <option value="$PROJECT_DIR$/base/templates/base/home.html" />
       </list>
     </option>
   </component>
@@ -185,10 +181,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4379000" />
+    <option name="totallyTimeSpent" value="5232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -232,22 +229,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/templates/base/project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="46">
           <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/templates/base/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2060">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/templates/base/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        <state relative-caret-position="346">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/templates/base/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2292">
+          <caret line="119" column="42" lean-forward="true" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
         </state>
       </provider>
     </entry>
