@@ -1,7 +1,7 @@
 {% load custom_tags %}
 
 <section>
-    <div class="container-fluid navigation-bar" id="nav">
+    <div class="navigation-bar topnav" id="myTopnav">
 
         {%  if request.user.is_authenticated %}
             <a class="nav-link" href="{% url 'base:home' %}">
@@ -17,6 +17,9 @@
                 Add Skill
             </a>
         {% else %}
+            <a class="nav-link" href="{% url 'base:home' %}">
+                Home
+            </a>
             <a class="nav-link" href="{% anchor 'base:home' 'my-projects' %}">
                 My projects
             </a>
@@ -32,8 +35,10 @@
             <a class="nav-link" href="{% anchor 'base:home' 'contact-me' %}">
                 Contact me
             </a>
-
         {% endif %}
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
 </section>
