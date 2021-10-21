@@ -22,6 +22,18 @@ body{
 
 }
 
+.navigation-bar{
+    background-color: #354955;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: #fff;
+}
+
 #profile_pic{
     height: 200px;
     width: 200px;
@@ -208,12 +220,17 @@ body{
    
 }
 
-
 @media (max-width:400px){
 
 
     .skill--wrapper{
         flex-flow: column;
         
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #fadeshow1 {
+        display: none;
     }
 }
