@@ -9,36 +9,66 @@
             <img id="profile_pic" src="{% static 'images/profile.jpg' %}" alt="profile_pic">
             <h2 class="intro--name">Dang <br> Ha</h2>
         </div>
+        <div><h5 class="description">Python Developer</h5></div>
     </div>
-    <div class="pb-2">
-        <h5 class="description">Backend Python Developer</h5>
+</section>
+
+<section class="container section--1" id="career-objective">
+    <div class="about--wrapper">
+        <h4>
+            Career Objective
+        </h4>
+        <hr class="hr-section">
+        <div class="container">
+            <p>
+                I want to use my knowledge and skills to gain practical exposure and understand the
+                inner-workings of the company. I’d like to learn on the job and grow individually.
+            </p>
+            <p>
+                My time management skills were not the best in high school, but I’ve found that through
+                completing my degree, I quickly learnt how to prioritize multiple tasks and meet tight deadlines.
+                So it’s something I want to keep working on when I’m in full-time employment.
+            </p>
+            <p>
+                Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging
+                environment to prove my skills and utilize my knowledge & intelligence in the growth of the company
+            </p>
+        </div>
     </div>
 </section>
 
 <section class="container section--2" id="my-experience">
     <div class="container">
-        <h4>MY EXPERIENCE</h4>
+        <h4>
+            MY EXPERIENCE
+        </h4>
+        <hr class="hr-section">
         <div class="container mt-3">
             <p>Experienced back-end developer with 3+ years in Python and system optimization.
-                Seeking opportunities to contribute technical expertise and drive innovation.</p>
-            <p>Key skills: Python, Fast API, Django/DRF, GraphQL, Oracle SQL, MySQL, PostgreSQL, Redis, Celery, MongoDB, Docker, K8S</p>
+                Seeking opportunities to contribute technical expertise and drive innovation.
+            </p>
+            <ul>
+                <li>
+                    <p>Phuong Nam Telecommunication Services Company Limited, Ho Chi Minh</p>
+                    <p>Duration: 1 year and 2 months</p>
+                    <p>Role: Python Developer (September 2022 - Present)</p>
+                </li>
+                <li>
+                    <p>Saigon Commercial Joint Stock Bank, Ho Chi Minh</p>
+                    <p>Duration: 2 years</p>
+                    <p>Role: Python Developer (October 2020 - September 2022)</p>
+                </li>
+            </ul>
         </div>
     </div> 
 </section>
 
-<section class="container section--1" id="my-certificate">
-    <div class="container">
-        <h4>MY CERTIFICATE</h4>
-        <div class="container mt-3">
-            <p>TOEIC Test Certification with a total score of 830 - May 2021</p>
-            <p>Python Developer Certificate - November 2021</p>
-        </div>
-    </div> 
-</section>
+<section class="container section--3" id="my-projects">
 
-<section class="container section--2" id="my-projects">
-
-    <h4>MY PROJECTS</h4>
+    <h4>
+        MY PROJECTS
+    </h4>
+    <hr class="hr-section">
     <div class="projects--wrapper">
 
         {% for project in projects %}
@@ -55,30 +85,15 @@
         <h3>There are no projects in the database...</h3> {% endfor %} </div>
 
 
-        <div class="about--wrapper">
-            <h3>Career Objective</h3>
-            <div class="container">
-            <p>
-                I want to use my knowledge and skills to gain practical exposure and understand the
-                inner-workings of the company. I’d like to learn on the job and grow individually.
-            </p>
-            <p>
-                My time management skills were not the best in high school, but I’ve found that through
-                completing my degree, I quickly learnt how to prioritize multiple tasks and meet tight deadlines.
-                So it’s something I want to keep working on when I’m in full-time employment.
-            </p>
-            <p>
-                Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging
-                environment to prove my skills and utilize my knowledge & intelligence in the growth of the company
-            </p>
-            </div>
-        </div>
-
 </section>
 
-<section class="section--1" id="my-skills">
-    <div class="container">
-        <h4>MY SKILLS</h4>
+
+<section class="container section--1" id="my-skills">
+    <div>
+        <h4>
+            MY SKILLS
+        </h4>
+        <hr class="hr-section">
     </div>
     <div class="skills--container">
         {% for skill in detailedSkills %}
@@ -96,8 +111,6 @@
         </div>
         {% endfor %}
 
-
-        <h4>Other Skills</h4>
         <div class="other--skills--wrapper">
             {% for skill in skills %}
             <div class="skill--tag">
@@ -110,9 +123,31 @@
 
 </section>
 
+<section class="container section--2" id="my-certificate">
+    <div class="container">
+        <h4>
+            MY CERTIFICATE
+        </h4>
+        <hr class="hr-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <p>TOEIC Test Certification with a total score of 830 - May 2021</p>
+                </li>
+                <li>
+                    <p>Python Developer Certificate - November 2021</p>
+                </li>
 
-<section class="container section--2" id="your-endorsements">
-    <h4>ENDORSEMENTS</h4>
+            </ul>
+        </div>
+    </div> 
+</section>
+
+<section class="container section--3" id="your-endorsements">
+    <h4>
+        ENDORSEMENTS
+    </h4>
+    <hr class="hr-section">
     <div class="skills--container">
 
 
@@ -120,7 +155,7 @@
         <div style="margin-bottom: 2em;" class="card">
             <div class="card-body">
                 <h5>{{ i.name }}</h5>
-                <p>{{ i.body }}</p>                
+                <p>{{ i.body }}</p>
             </div>
         </div>
         {% endfor %}
@@ -130,52 +165,58 @@
     </div>
 </section>
 
-
-<section class="section--1" id="my-location">
+<section class="container section--1" id="message-me">
+    <h4>
+        MESSAGE ME
+    </h4>
+    <hr class="hr-section">
     <div class="container">
-        <h4>MY LOCATION</h4>
-        <div class="container container-iframe text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15681.413955960297!2d106.6427911!3d10.7071945!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf765616ff7ca94d!2sChung%20c%C6%B0%20The%20Mansion!5e0!3m2!1sen!2s!4v1662391182988!5m2!1sen!2s" class="map_sss responsive-iframe" allowfullscreen></iframe>
-        </div>
+        <form class="contact--form" method="POST">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label">{{ form.name.label }}</label>
+                {{ form.name }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ form.email.label }}</label>
+                {{ form.email }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ form.subject.label }}</label>
+                {{ form.subject }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ form.body.label }}</label>
+                {{ form.body }}
+            </div>
+
+            <div class="text-center">
+                <input class="btn btn-primary" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<section class="container section--2" id="my-location">
+    <h4>
+        MY LOCATION
+    </h4>
+    <div class="container container-iframe text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15681.413955960297!2d106.6427911!3d10.7071945!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf765616ff7ca94d!2sChung%20c%C6%B0%20The%20Mansion!5e0!3m2!1sen!2s!4v1662391182988!5m2!1sen!2s" class="map_sss responsive-iframe" allowfullscreen></iframe>
     </div>
 </section>
 
 
-<section class="container section--2" id="message-me">
-    <h4>MESSAGE ME</h4>
-    <form class="contact--form" method="POST">
-        {% csrf_token %}
-
-        <div class="mb-3">
-            <label class="form-label">{{ form.name.label }}</label>
-            {{ form.name }}
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">{{ form.email.label }}</label>
-            {{ form.email }}
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">{{ form.subject.label }}</label>
-            {{ form.subject }}
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">{{ form.body.label }}</label>
-            {{ form.body }}
-        </div>
-
-        <div class="text-center">
-            <input class="btn btn-primary" type="submit" value="submit">
-        </div>
-    </form>
-
-</section>
-
-
-<section class="container section--1" id="contact-me">
-    <h4>CONTACT ME</h4>
+<section class="container section--3" id="contact-me">
+    <h4>
+        CONTACT ME
+    </h4>
+    <hr class="hr-section">
     <div class="container-fluid">
         <div class="container">
             <div class="row py-4">
@@ -211,7 +252,8 @@
                         </div>
                         <div class="col-9 align-self-center">
                             <span class="d-block">Address</span>
-                            <span class="d-block"> The Mansion Apartment, Ho Chi Minh, Vietnam</span>
+                            <span class="d-block"> The Mansion Apartment</span>
+                            <span class="d-block"> Ho Chi Minh, Vietnam</span>
                         </div>
                         <div class="clearfix"></div>
                     </div>
