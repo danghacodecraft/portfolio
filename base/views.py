@@ -1,9 +1,27 @@
 from django.shortcuts import render, redirect
-from .models import Project, Skill, Message, Endorsement
+from .models import Upload, Project, Skill, Message, Endorsement
 from .forms import ProjectForm, MessageForm, SkillForm, EndorsementForm, CommentForm
 from django.contrib import messages
-# Create your views here.
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
 
+
+def image_upload(request):
+    if request.method == 'POST':
+        image_file = request.FILES['image_file']
+        image_type = request.POST['image_type']
+        if settings.USE_S3:
+            upload = Upload(file=image_file)
+            upload.save()
+            image_url = upload.file.url
+        else:
+            fs = FileSystemStorage()
+            filename = fs.save(image_file.name, image_file)
+            image_url = fs.url(filename)
+        return render(request, 'upload.html', {
+            'image_url': image_url
+        })
+    return render(request, 'upload.html')
 
 def home(request):
     projects = Project.objects.all()

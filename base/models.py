@@ -2,7 +2,10 @@ from django.db import models
 import uuid
 from ckeditor_uploader.fields import RichTextUploadingField
 
-# Create your models here.
+
+class Upload(models.Model):
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    file = models.FileField()
 
 
 class Project(models.Model):
