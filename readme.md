@@ -66,11 +66,56 @@ performance evaluations.
 -	Spearheaded initiatives to enhance API performance.
 -	Implemented caching strategies for improved data retrieval efficiency.
 
-**AND MORE**
+### Project 3: SCB - CRM Website
+
+**Role**: Python Developer        
+
+**Duration**: 2 years    
+
+**Team size**: 15 members        
+
+**Domain**: Banking
+
+**Tech Stack**: FastAPI, Gitlab, CI/CD, MongoDB, Oracle DB and Kafka.
+
+**Description**: Developed a comprehensive CRM web portal tailored for tellers to streamline customer interactions and 
+enhance overall service delivery. The platform provides a unified interface for managing customer data, inquiries, 
+and transactions efficiently.
+
+**Responsibilities**:
+-	Developed modules for quick and secure transaction processing, including deposits, withdrawals, and fund transfers.
+-	Ensured compliance with security protocols and regulations for financial transactions.
+
+**Achievements**:
+Implemented optimizations in data retrieval and storage, ensuring faster access to critical information. These 
+enhancements contributed to a smoother workflow for tellers, resulting in increased efficiency and improved overall 
+user satisfaction.
+
+### Project 4: SCB - Data Warehouse
+
+**Role**: Python Developer        
+
+**Duration**: 2 years    
+
+**Team size**: 10 members        
+
+**Domain**: Banking
+
+**Tech Stack**: Django, DRF, Gitlab, CI/CD, and Oracle DB
+
+**Description**: 
+Spearheaded the development of APIs crucial to the efficient functioning of the internal banking data warehouse.
+
+**Responsibilities**:
+-	Ensured seamless handling of employee data and streamlined access to branch map information. 
+-	Implemented robust report chart functionalities for comprehensive internal management.
+-	Played a pivotal role in identifying and swiftly resolving critical bugs
+
+**Achievements**:
+
+Implemented optimizations in data retrieval and storage, ensuring faster access to critical information.
 
 ## Skills
-
-List the key skills you possess. This can include programming languages, frameworks, tools, and any other relevant competencies. You can categorize them to make it easier for readers to identify your strengths.
 
 - **Programming Languages:**
   - Python
@@ -92,4 +137,4 @@ List the key skills you possess. This can include programming languages, framewo
 
 - Email: [hadh31011999@gmail@example.com](mailto:hadh31011999@gmail.com)
 - LinkedIn: [https://linkedin.com/in/hadh99](https://linkedin.com/in/hadh99 )
-- Phone Number: [(+84) 0349998172](0349998172)
+
