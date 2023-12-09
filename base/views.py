@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Upload, Project, Skill, Message, Endorsement
+from .models import Upload, UploadPrivate, Project, Skill, Message, Endorsement
 from .forms import ProjectForm, MessageForm, SkillForm, EndorsementForm, CommentForm
 from django.contrib import messages
 from django.conf import settings
@@ -11,7 +11,10 @@ def image_upload(request):
         image_file = request.FILES['image_file']
         image_type = request.POST['image_type']
         if settings.USE_S3:
-            upload = Upload(file=image_file)
+            if image_type == 'private':
+                upload = UploadPrivate(file=image_file)
+            else:
+                upload = Upload(file=image_file)
             upload.save()
             image_url = upload.file.url
         else:
