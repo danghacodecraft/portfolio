@@ -1,12 +1,17 @@
 from django.db import models
 import uuid
 from ckeditor_uploader.fields import RichTextUploadingField
+from portfoliowebsite.storage_backends import PublicMediaStorage, PrivateMediaStorage
 
 
 class Upload(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    file = models.FileField()
+    file = models.FileField(storage=PublicMediaStorage())
 
+
+class UploadPrivate(models.Model):
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    file = models.FileField(storage=PrivateMediaStorage())
 
 class Project(models.Model):
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
