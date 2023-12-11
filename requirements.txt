@@ -5,7 +5,7 @@ Django==3.2.5
 django-ckeditor==6.1.0
 django-storages==1.14.2
 gunicorn==20.1.0
-pymysql
+mysqlclient==2.2.0
 Pillow==8.3.1
 python-dotenv==0.19.0
 
