@@ -1,11 +1,11 @@
-pkgconfig==1.5.5
 awsebcli
 boto3
 Django==3.2.5
 django-ckeditor==6.1.0
 django-storages==1.14.2
 gunicorn==20.1.0
-mysqlclient==2.2.0
+pkgconfig
+mysqlclient
 Pillow==8.3.1
 python-dotenv==0.19.0
 python3-dev
